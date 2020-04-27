@@ -17,9 +17,13 @@ More docs: https://www.netlify.com/docs/identity/
 `)
 }
 
+require("dotenv").config({
+  path: '.env',
+})
+
 module.exports = {
   siteMetadata: {
-    title: "JAMstack Hackathon Starter",
+    title: "IMA World Map",
     description: `Kick off your next, great Gatsby app.`,
     author: `@swyx`,
   },

@@ -48,9 +48,16 @@ export class MapContainer extends React.Component {
 
     render() {
 
-        const markers = (this.state.places && this.state.places.length > 0) ? this.state.places.map((place) => {
+        const containerStyle = {
+            position: 'relative',  
+            width: '100%',
+            height: '90vh'
+          }
+
+        const markers = (this.state.places && this.state.places.length > 0) ? this.state.places.map((place, key) => {
             return (
                 <Marker
+                    key={key}
                     onClick={this.onMarkerClick}
                     name={place.data.Name}
                     position={{lat: place.data.Y, lng: place.data.X}} >
@@ -60,6 +67,7 @@ export class MapContainer extends React.Component {
 
         return (
           <Map 
+            style={containerStyle}
             google={this.props.google} 
             onClick={this.onMapClicked}
             onReady={this.fetchPlaces}
@@ -86,5 +94,5 @@ export class MapContainer extends React.Component {
 }
  
 export default GoogleApiWrapper({
-  apiKey: ("AIzaSyCaJO2wxhzHLTsGTs1LL7t_e_dsfPq0jdg")
+  apiKey: (process.env.GOOGLE_MAPS_API_KEY)
 })(MapContainer)

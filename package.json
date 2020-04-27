@@ -7,6 +7,7 @@
     "@reach/dialog": "^0.2.9",
     "@reach/tabs": "^0.1.6",
     "@reach/visually-hidden": "^0.1.4",
+    "fs": "0.0.1-security",
     "gatsby": "^2.15.11",
     "gatsby-image": "^2.2.17",
     "gatsby-plugin-create-client-paths": "^2.1.6",
@@ -22,7 +23,8 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
-    "react-netlify-identity-widget": "^0.2.5"
+    "react-netlify-identity-widget": "^0.2.5",
+    "secure-env": "^1.2.0"
   },
   "keywords": [
     "gatsby"

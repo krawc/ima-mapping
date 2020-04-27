@@ -1,6 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 
+// let secureEnv = require('secure-env');
+// global.env = secureEnv({secret:'imaWeltMap'});
+
 import Layout from "../components/layout"
 import MapContainer from "../components/mapcontainer"
 import SEO from "../components/seo"
