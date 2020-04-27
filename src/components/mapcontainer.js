@@ -51,7 +51,7 @@ export class MapContainer extends React.Component {
         const containerStyle = {
             position: 'relative',  
             width: '100%',
-            height: '90vh'
+            height: '86vh'
           }
 
         const markers = (this.state.places && this.state.places.length > 0) ? this.state.places.map((place, key) => {

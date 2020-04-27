@@ -13,6 +13,9 @@ export default () => {
     <div
       style={{
         display: "flex",
+        padding: '0 1rem',
+        lineHeight: "4vh",
+        fontFamily: "Helvetica, sans-serif",
         flex: "1",
         justifyContent: "space-between",
         borderBottom: "1px solid #d1c1e0",
@@ -23,7 +26,7 @@ export default () => {
 
       <nav>
         <span>Navigate the app: </span>
-        <Link to="/app/">Main</Link>
+        <Link to="/">Main</Link>
         {` `}
         <Link to="/app/profile">Profile</Link>
         {` `}
